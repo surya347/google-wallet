@@ -25,8 +25,8 @@ const serviceAccountFile = process.env.GOOGLE_APPLICATION_CREDENTIALS || './soli
 const issuerId = process.env.WALLET_ISSUER_ID || '3388000000022179153';
 const classId = process.env.WALLET_CLASS_ID || '44a44c65-1544-490b-a918-5c93c86a2b0e';
 
-const PORT = process.env.PORT || 3000 
-const ORIGINS = process.env.URL || 'http://localhost:3000';
+const PORT = process.env.PORT || 4000;
+const ORIGINS = process.env.URL || 'http://localhost:4000';
 
 
 async function createPassAndToken(req, res) {
