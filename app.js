@@ -121,7 +121,7 @@ const app = express();
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static('public'));
-app.post('/', createPassAndToken);
+app.post('/wallet', createPassAndToken);
 app.listen(PORT,() => {
   console.log(`server is running at port no. ${PORT}`)
 })
