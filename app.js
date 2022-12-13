@@ -20,33 +20,14 @@ const path = require('path');
 const bodyParser = require('body-parser'); 
 const { GoogleAuth } = require('google-auth-library');
 const jwt = require('jsonwebtoken');
-const serverless = require('serverless-http');
-
-const PORT = process.env.PORT || 3000 
-const ORIGINS = process.env.URL || 'http://localhost:3000';
 
 const serviceAccountFile = process.env.GOOGLE_APPLICATION_CREDENTIALS || './solid-binder-371504-28022d092ac6.json';
 const issuerId = process.env.WALLET_ISSUER_ID || '3388000000022179153';
 const classId = process.env.WALLET_CLASS_ID || '44a44c65-1544-490b-a918-5c93c86a2b0e';
 
-// router.post("/addtogooglewallet", async (req, res) => { 
-//   console.log(req.body);
-//   console.log(req.body.email);
+const PORT = process.env.PORT || 3000 
+const ORIGINS = process.env.URL || 'http://localhost:3000';
 
-//   if (!email ) {
-//     return res.status(500).json({ error: "Email field is empty" });
-//   }
- 
-//   try {
-    
-//   } catch (error) {
-//     console.log("err:" + error);
-//   }
-// });
-
-router.get('/', (req,res)=>{
-  res.json({ 'hello':'hi'})
-}); 
 
 async function createPassAndToken(req, res) {
   const credentials = require(serviceAccountFile);
@@ -56,7 +37,7 @@ async function createPassAndToken(req, res) {
   });
 
   const objectUrl = 'https://walletobjects.googleapis.com/walletobjects/v1/genericObject/';
-  const objectPayload = require('../generic-pass.json');
+  const objectPayload = require('./generic-pass.json');
 
   objectPayload.id = `${issuerId}.${req.body.email.replace(/[^\w.-]/g, '_')}-${classId}`;
   objectPayload.classId = `${issuerId}.${classId}`;
@@ -89,7 +70,8 @@ async function createPassAndToken(req, res) {
   
   const token = jwt.sign(claims, credentials.private_key, {algorithm: 'RS256'});
   const saveUrl = `https://pay.google.com/gp/v/save/${token}`;
-  res.send(`<a href="${saveUrl}"><img src="button.png"></a>`);
+
+  res.status(200).send(`<a href="${saveUrl}"><img src="button.png"></a>`);
   console.log(`<a href="${saveUrl}"><img src="button.png"></a>`);
 }
 
@@ -136,7 +118,6 @@ async function createPassAndToken(req, res) {
 // }
 
 const app = express();
-app.use('/.netlify/functions/app',router);
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static('public'));
@@ -144,5 +125,3 @@ app.post('/', createPassAndToken);
 app.listen(PORT,() => {
   console.log(`server is running at port no. ${PORT}`)
 })
-
-module.exports.handler = serverless(app);
