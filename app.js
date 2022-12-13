@@ -28,6 +28,10 @@ const classId = process.env.WALLET_CLASS_ID || '44a44c65-1544-490b-a918-5c93c86a
 const PORT = process.env.PORT || 4000;
 const ORIGINS = process.env.URL || 'http://localhost:4000';
 
+router.get('/',(req,res)=>{
+
+  res.json({ 'test':'t'})
+})
 
 async function createPassAndToken(req, res) {
   const credentials = require(serviceAccountFile);
