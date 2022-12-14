@@ -1,39 +1,52 @@
+
 {
-  "genericType": "GENERIC_TYPE_UNSPECIFIED",
-  "hexBackgroundColor": "rgb(204, 182, 133)",
+  "id": "3388000000022179153",
+  "classId": "44a44c65-1544-490b-a918-5c93c86a2b0e",
   "logo": {
     "sourceUri": {
-      "uri": "https://artlogic-res.cloudinary.com/w_1200,c_limit,f_auto,fl_lossy,q_auto/ws-dellasposa/usr/images/video_entries/main_image/9/the-arts-club.png"
+      "uri": "https://dv1oh8li7xq0o.cloudfront.net/brands/4344839/brand_profile/1649650a21d048258d29810ea144656b/240_240.jpeg"
+    },
+    "contentDescription": {
+      "defaultValue": {
+        "language": "en",
+        "value": "The Arts Club Dubai"
+      }
     }
-  }, 
+  },
   "cardTitle": {
     "defaultValue": {
       "language": "en",
-      "value": "The Arts Club"
+      "value": "The Arts Club Dubai"
     }
   },
   "subheader": {
     "defaultValue": {
       "language": "en",
-      "value": "Member Id"
+      "value": "Membership Card"
     }
   },
   "header": {
     "defaultValue": {
       "language": "en",
-      "value": "Sheikh"
-    }
-  },
-  "barcode": {
-    "type": "QR_CODE",
-    "value": "https://theartsclub-dev-ed.develop.lightning.force.com/lightning/n/MemberLogin?C__Id=0035h00000rPYQZAA4&C__firstName=Sheikh&C__lastName=Zayad&C__Salutation=Mr.&C__MemberId=M-0003"
-  },
-  "heroImage": {
-    "sourceUri": {
-      "uri": ""
+      "value": "Shiekh Zayed"
     }
   },
   "textModulesData": [
-    
-  ]
+    {
+      "id": "member_id_",
+      "header": "Member Id ",
+      "body": "M-0003"
+    },
+    {
+      "id": "date",
+      "header": "Date",
+      "body": "14/12/2022"
+    }
+  ],
+  "barcode": {
+    "type": "QR_CODE",
+    "value": "https://theartsclub-dev-ed.develop.lightning.force.com/lightning/n/MemberLogin?C__Id=0035h00000rPYQZAA4&C__firstName=Sheikh&C__lastName=Zayad&C__Salutation=Mr.&C__MemberId=M-0003",
+    "alternateText": null
+  },
+  "hexBackgroundColor": "#ccb685"
 }

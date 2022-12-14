@@ -75,57 +75,16 @@ async function createPassAndToken(req, res) {
   const token = jwt.sign(claims, credentials.private_key, {algorithm: 'RS256'});
   const saveUrl = `https://pay.google.com/gp/v/save/${token}`;
 
-  res.status(200).send(saveUrl);
+  // res.status(200).send(saveUrl);
+  res.status(200).send(`<a href="${saveUrl}"><img src="button.png"></a>`);
   console.log(`${saveUrl}`);
 }
-
-// async function createPassAndToken(req, res) {
-//   const credentials = require(serviceAccountFile);
-//   const httpClient = new GoogleAuth({
-//     credentials: credentials,
-//     scopes: 'https://www.googleapis.com/auth/wallet_object.issuer'
-//   });
-
-//   const objectUrl = 'https://walletobjects.googleapis.com/walletobjects/v1/genericObject/';
-//   const objectPayload = require('./generic-pass.json');
-
-//   objectPayload.id = `${issuerId}.${req.body.email.replace(/[^\w.-]/g, '_')}-${classId}`;
-//   objectPayload.classId = `${issuerId}.${classId}`;
-
-//   let objectResponse;
-//   try {
-//     objectResponse = await httpClient.request({url: objectUrl + objectPayload.id, method: 'GET'});
-//     console.log('existing object', objectPayload.id);
-//   } catch (err) {
-//     if (err.response && err.response.status === 404) {
-//       objectResponse = await httpClient.request({url: objectUrl, method: 'POST', data: objectPayload});
-//       console.log('new object', objectPayload.id);
-//     } else {
-//       console.error(err);
-//       throw err;
-//     }
-//   }
-
-//   const claims = {
-//     iss: credentials.client_email, // `client_email` in service account file.
-//     aud: 'google',
-//     origins: ['http://localhost:3000'],
-//     typ: 'savetowallet',
-//     payload: {
-//       genericObjects: [{id: objectPayload.id}],
-//     },
-//   };
-
-//   const token = jwt.sign(claims, credentials.private_key, {algorithm: 'RS256'});
-//   const saveUrl = `https://pay.google.com/gp/v/save/${token}`;
-//   res.send(`<a href="${saveUrl}"><img src="wallet-button.png"></a>`);
-// }
 
 const app = express();
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static('public'));
-app.post('/wallet', createPassAndToken);
+app.post('/', createPassAndToken);
 app.listen(PORT,() => {
   console.log(`server is running at port no. ${PORT}`)
 })
