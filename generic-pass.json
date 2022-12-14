@@ -33,14 +33,14 @@
   },
   "textModulesData": [
     {
-      "id": "member_id_",
-      "header": "Member Id ",
-      "body": "M-0003"
+      "header": "MEMBER ID",
+      "body": "M-0003",
+      "id": "points"
     },
     {
-      "id": "date",
-      "header": "Date",
-      "body": "14/12/2022"
+      "header": "DATE",
+      "body": "14/12/2022",
+      "id": "contacts"
     }
   ],
   "barcode": {
