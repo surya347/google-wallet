@@ -1,48 +1,39 @@
 {
   "genericType": "GENERIC_TYPE_UNSPECIFIED",
-  "hexBackgroundColor": "#4285f4",
+  "hexBackgroundColor": "rgb(204, 182, 133)",
   "logo": {
     "sourceUri": {
-      "uri": "https://storage.googleapis.com/wallet-lab-tools-codelab-artifacts-public/pass_google_logo.jpg"
+      "uri": "https://artlogic-res.cloudinary.com/w_1200,c_limit,f_auto,fl_lossy,q_auto/ws-dellasposa/usr/images/video_entries/main_image/9/the-arts-club.png"
     }
-  },
+  }, 
   "cardTitle": {
     "defaultValue": {
       "language": "en",
-      "value": "Google I/O Wallet"
+      "value": "The Arts Club"
     }
   },
   "subheader": {
     "defaultValue": {
       "language": "en",
-      "value": "Attendee"
+      "value": "Member Id"
     }
   },
   "header": {
     "defaultValue": {
       "language": "en",
-      "value": "Surya Wallet"
+      "value": "Sheikh"
     }
   },
   "barcode": {
     "type": "QR_CODE",
-    "value": "12345"
+    "value": "https://theartsclub-dev-ed.develop.lightning.force.com/lightning/n/MemberLogin?C__Id=0035h00000rPYQZAA4&C__firstName=Sheikh&C__lastName=Zayad&C__Salutation=Mr.&C__MemberId=M-0003"
   },
   "heroImage": {
     "sourceUri": {
-      "uri": "https://storage.googleapis.com/wallet-lab-tools-codelab-artifacts-public/google-io-hero-demo-only.jpg"
+      "uri": ""
     }
   },
   "textModulesData": [
-    {
-      "header": "POINTS",
-      "body": "99",
-      "id": "points"
-    },
-    {
-      "header": "CONTACTS",
-      "body": "99",
-      "id": "contacts"
-    }
+    
   ]
 }

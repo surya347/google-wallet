@@ -75,8 +75,8 @@ async function createPassAndToken(req, res) {
   const token = jwt.sign(claims, credentials.private_key, {algorithm: 'RS256'});
   const saveUrl = `https://pay.google.com/gp/v/save/${token}`;
 
-  res.status(200).send(`<a href="${saveUrl}"><img src="button.png"></a>`);
-  console.log(`<a href="${saveUrl}"><img src="button.png"></a>`);
+  res.status(200).send(saveUrl);
+  console.log(`${saveUrl}`);
 }
 
 // async function createPassAndToken(req, res) {
