@@ -44,6 +44,7 @@ async function createPassAndToken(req, res) {
   const objectPayload = require('./generic-pass.json');
 
   objectPayload.id = `${issuerId}.${req.body.email.replace(/[^\w.-]/g, '_')}-${classId}`;
+  console.log('req.body.email', JSON.stringify(req.body.email));
   objectPayload.classId = `${issuerId}.${classId}`;
 
   let objectResponse;
