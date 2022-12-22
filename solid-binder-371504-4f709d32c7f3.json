@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "solid-binder-371504",
+  "private_key_id": "4f709d32c7f3b3611b2952b883326171987e612a",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCiMrIyZK8CMc6e\nHgd0C4k97X4TqloLEVq8nGrjTsiy3uxnv+dS0S0sKIpoit16VxtyZ/9kuVjHhktW\nPicgarrw0g7X6nQyagN2yRqIZ9IV8hhEaq7cOBz8yCkUXdI2YVXkJaZG4RRG23bN\nAHf4SadDPr1her7aqlM+qZ6GdGLGVVzgbGSYSfH5e8/UKip3YqrnvMiq4cbPTGNA\nyUFa7rKqB7yNHHoS8N0WDjPmhOx09e3zL3eCTxRobNmW2GW7Ea/WHuoUx7WS1RlT\nS7c+Pdkf3Kwgz2Goqe+gY0KiZodgkG0wYyMoDHLJuBeo7Sm36I8XsPoUPPpmvhsd\nv6Gr+EKtAgMBAAECggEAAbKyXxWvwVmgVjmhQVh0X0Oy7xjFW/O0Dy2iCG9enLf5\nu88fm4qmEVEuIpClmrstUq7LcGE1kG0tZIgLcWrv0+D9fjD6dqNzSTvEvXEJmxvP\nbKC85Bnp4vmWq7U2ikXNmBeOz8bzQLFzSaUiHGU4M464fW9DO6Q1CxhlspANKRKS\nbT6zcDi9YTfe56umRiyldBFhCUWfyYdUhN3lvNs44FiqEHNaHqQLZxM+PSVKnkzl\nOClErcVjtdUwPu2OCyMY1cS3yAci6MQAqVfUOJ2guuuQfNH2gTShDqSJ76XcnRey\n/K3SJ/ZVqrxou43/mFAFBhY2Sb9AGQHQAMYFO8BTMQKBgQDcYRTV+6bN9NV5UHfZ\n5AsqpHe2kl2d9rAGjhj+vXZL6PieKcRVZBGmCEXkJep3Slch7XB+k+wiMNudA6Kj\nC6Rju9IGbrMSGnOX7bq4ZvEzIgdwWO/GTljnG9n4czgAXzlP6kn5al3L2FlBCMiV\nITOfdsrGSkXMHOldhvGJNaR11QKBgQC8aizz3oBwj7s5ZTq2R7O6DearPnC8LEIy\nnF6eftCFXKx1/exb6HVOcPqadLLflZb0OVqDO78wchxh4Zpdf0dl+RwkCGRcds8x\nkY+qYvD0cQSnlPXpDIH2sWMgjHahEPgpe60EztlwQQECcZpR1TMTVYPRrDaYWJDK\ngR4qTt3NeQKBgQCB5l+HuiwaXmSue3YJ41eJrSQ7Y473G3+qfXvSPA9Ms2hIoknu\nI2wbt+iqkIbiBdnST8jtc3fOt4nbxVbKUIR3nTAxRnMbCqh0N1bGdzdZcod7+5Bq\nDahtoYcb4Z5y6a44otszvzTGgSIrKWhCLy3kovrnYsQ9ihUsYexhelMUeQKBgHSx\nlfHcptQQUTb1GW337rqXDXyWCaCiEMXjzz5+8IsIoM/bWt55lN3mX2/2QyrzLTFJ\nrGOHR5yrsCR3Y/HweLoRlXpDsFUMSLs8miw/Z1kd/nIEcmHKm1u89dYc6QRMzEZ1\nEO3fZxB9UjC/R4LTdvTMi/36mT217MdfPN2bRwiRAoGBAM4UshE641c+pGXumu5w\nnhD9HYUxZjuN0/TiazF+KCUPNym06CKKnYdnIdu+DbqQhgwscZq+DFbgjKVruwKg\n45oaheMaQ2XTo9vScHHdqtycOXXmZY4/fyu991grg3oS6m6tITI9au+AUt0upGxr\nXBYU8WnmB5lmdzoK+NLvKpUH\n-----END PRIVATE KEY-----\n",
+  "client_email": "wallet@solid-binder-371504.iam.gserviceaccount.com",
+  "client_id": "114413255624669904617",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/wallet%40solid-binder-371504.iam.gserviceaccount.com"
+}

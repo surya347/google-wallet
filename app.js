@@ -18,12 +18,12 @@ const express = require('express');
 const router = express.Router();
 const path = require('path');
 const bodyParser = require('body-parser'); 
-const { GoogleAuth } = require('google-auth-library');
+const { GoogleAuth } = require('google-auth-library'); 
 const jwt = require('jsonwebtoken');
 
-const serviceAccountFile = process.env.GOOGLE_APPLICATION_CREDENTIALS || './solid-binder-371504-28022d092ac6.json';
-const issuerId = process.env.WALLET_ISSUER_ID || '3388000000022179153';
-const classId = process.env.WALLET_CLASS_ID || '44a44c65-1544-490b-a918-5c93c86a2b0e';
+const serviceAccountFile = process.env.GOOGLE_APPLICATION_CREDENTIALS || './solid-binder-371504-4f709d32c7f3.json';
+const issuerId = process.env.WALLET_ISSUER_ID || '3388000000022191527';
+const classId = process.env.WALLET_CLASS_ID || 'b2d9d0bf-d874-402d-9aca-524c7d541977';
 
 const PORT = process.env.PORT || 4000;
 const ORIGINS = process.env.URL || 'http://localhost:4000';
